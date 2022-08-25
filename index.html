@@ -44,6 +44,13 @@
         tailwind.config = {
   theme: {
     extend: {
+        gridTemplateRows: {
+        // Simple 8 row grid
+        '8': 'repeat(4, 500px)',
+
+        // Complex site-specific row configuration
+        'layout': '200px minmax(900px, 1fr) 100px',
+      },
       backgroundImage: {
         'hero-pattern' : "url('/images/rode-rodecaster-pro-II-home-page-1920x700-rgb.jpg')",
         'nth-headphone': "url('/images/rode-nth100-lifestyle-insitu-female-looking-down-grey-1920x700-rgb.jpg')",
@@ -51,6 +58,10 @@
         'pod-mic': "url('/images/rode-podmic-webheader-1920x700-rgb (2).jpg')",
         'wireless-go': "url('/images/WIGOII-WEBHEADER-02.jpg')",
         'nt-usb-mini': "url('/images/rode-nt-usb-mini-webheader-1920x700-rgb (2).jpg')",
+        'microphone': "url('/images/images_page_1_modules_5357_microphones-module-1200x300-rgb.png')",
+        'interfaces': "url('/images/images_page_1_modules_5359_interfaces-module-2022-1200x300-rgb.jpg')",
+        'softwares': "url('/images/images_page_1_modules_5361_software-module-2021-1200x300-rgb.png')",
+        'accesories': "url(/images/images_page_1_modules_5370_accessories-module-2021-1200x300-rgb.png)",
       },
       colors:{
         proIIcolor:'hsl(183, 8%, 53%)',
@@ -58,6 +69,7 @@
         lightbrown:'hsl(40, 27%, 56%)',
         lightviolet: 'hsl(263, 44%, 80%)',
         lightblue: 'hsl(202, 55%, 67%)',
+        grey: 'hsl(0, 0%, 46%)',
       }
     }
   }
@@ -148,6 +160,25 @@
                     <a href="#" class="text-white">LEARN MORE</a><i class="fa-solid fa-angle-right text-white ml-2"></i>
                     <button class="rounded-full mx-4 bg-brown px-4 py-2 hover:bg-white text-white hover:text-brown">BUY NOW</button>
                 </div>
+            </div>
+        </div>
+        <!-- Explore Rod Range -->
+        <div class="md:px-[14%] py-[24px]">
+            <h2 class="text-grey text-[2.2em] text-center font-bold">Explore The RØDE Range</h2>
+        </div>
+        <!-- Explore Rod Range Medium Cards -->
+        <div class="grid md:mx-[14%] gap-[20px] px-[10px] md:px-0">
+            <div class="flex items-center bg-microphone h-[120px] md:h-[300px] bg-no-repeat bg-cover md:bg-contain">
+                <img src="/images/images_page_1_modules_5364_microphones-text.svg" class="" alt="">
+            </div>
+            <div class="flex items-center bg-interfaces h-[120px] md:h-[300px] bg-no-repeat bg-cover md:bg-contain">
+                <img src="/images/images_page_1_modules_5366_interfaces-text.svg" class="" alt="">
+            </div>
+            <div class="flex items-center bg-softwares h-[120px] md:h-[300px] bg-no-repeat bg-cover md:bg-contain">
+                <img src="/images/images_page_1_modules_5365_software-text.svg" class="" alt="">
+            </div>
+            <div class="flex items-center bg-accesories h-[120px] md:h-[300px] bg-no-repeat bg-cover md:bg-contain">
+                <img src="/images/images_page_1_modules_5368_accessories-text.svg" class="" alt="">
             </div>
         </div>
     </main>
