@@ -223,42 +223,50 @@
         </div>
     </main>
     <footer>
-        <div class="flex md:mx-[14%] items-start justify-start md:pt-[50px]">
-            <img src="/images/rode footer.svg" class="py-[10px] md:px-[20px]" alt="">
-            <div class="px-[10px] md:flex md:gap-[20px]">
+        <div class="flex flex-col md:flex-row md:mx-[14%] items-center justify-strech md:justify-start md:pt-[50px]">
+            <img src="/images/rode footer.svg" class="py-[10px] md:px-[20px] md:mb-auto" alt="">
+            <div class="px-[10px] md:flex self-start md:gap-[20px] text-left">
                 <ul class="text-footerpcolor text-[1.025em] leading-9">
-                    <li class="text-black text-bold">Products</li>
-                    <li>Microphones</li>
-                    <li>Headphones</li>
-                    <li>Interfaces and Mixers</li>
-                    <li>Accessories</li>
-                    <li>Software</li>
-                    <li>Apparel</li>
+                    <li class="text-black text-bold inline-block md:block border-t-[2px] border-b-[2px] md:border-0 flex items-center w-[90vw] md:w-auto justify-between">Products<i class="fa-solid fa-plus inline-block md:hidden"></i></li>
+                    <li class="hidden md:block">Microphones</li>
+                    <li class="hidden md:block">Headphones</li>
+                    <li class="hidden md:block">Interfaces and Mixers</li>
+                    <li class="hidden md:block">Accessories</li>
+                    <li class="hidden md:block">Software</li>
+                    <li class="hidden md:block">Apparel</li>
                 </ul>
                 <ul class="text-footerpcolor text-[1.025em] leading-9">
-                    <li class="text-black text-bold">Support</li>
-                    <li>Contact RODE</li>
-                    <li>Service Centre</li>
-                    <li>Warranty</li>
-                    <li>Where to Buy</li>
+                    <li class="text-black text-bold inline-block md:block flex items-center border-b-[2px] md:border-0 w-[90vw] md:w-auto justify-between">Support<i class="fa-solid fa-plus inline-block md:hidden"></i></li>
+                    <li class="hidden md:block">Contact RODE</li>
+                    <li class="hidden md:block">Service Centre</li>
+                    <li class="hidden md:block">Warranty</li>
+                    <li class="hidden md:block">Where to Buy</li>
                 </ul>
                 <ul class="text-footerpcolor text-[1.025em] leading-9">
-                    <li class="text-black text-bold">Company</li>
-                    <li>About RODE</li>
-                    <li>News and info</li>
-                    <li>Job Opportunities</li>
-                    <li class="text-black text-bold">Account</li>
-                    <li>Manage your Account</li>
-                    <li>Create Account</li>
+                    <li class="text-black text-bold inline-block md:block flex items-center border-b-[2px] md:border-0 w-[90vw] md:w-auto justify-between">Company<i class="fa-solid fa-plus inline-block md:hidden"></i></li>
+                    <li class="hidden md:block">About RODE</li>
+                    <li class="hidden md:block">News and info</li>
+                    <li class="hidden md:block">Job Opportunities</li>
+                    <li class="text-black text-bold inline-block md:block flex items-center border-b-[2px] md:border-0 w-[90vw] md:w-auto justify-between">Account<i class="fa-solid fa-plus inline-block md:hidden"></i></li>
+                    <li class="hidden md:block">Manage your Account</li>
+                    <li class="hidden md:block">Create Account</li>
                 </ul>
             </div>
-            <div class="justify-self-end md:ml-auto flex flex-col items-end justify-end">
-                <div class="text-[1.625em] font-bold text-right">Subscribe to our latest<br />news and offers</div>
-                <div class="mt-[10px] hover:bg-white hover:text-lightbrown border-2 hover:border-lightbrown rounded-full bg-lightbrown font-semibold  cursor-pointer text-white px-4 py-2">Sign Up</div>
-
+            <div class="justify-self-end md:ml-auto flex flex-col items-end justify-end text-center md:text-right md:mb-auto">
+                <div class="text-[1.625em] font-bold">Subscribe to our latest<br />news and offers</div>
+                <div class="mt-[10px] mx-auto md:mx-0 hover:bg-white hover:text-lightbrown border-2 hover:border-lightbrown rounded-full bg-lightbrown font-semibold  cursor-pointer text-white px-4 py-2">Sign Up</div>
             </div>
         </div>
-        <div></div>
+        <div class="grid md:grid-cols-3 justify-center border-t-[1px] md:justify-between md:mx-[14%] mt-[20px] items-center gap-[20px] py-8">
+            <p class="row-start-3 md:row-start-1">© 2022 RØDE All Rights Reserved.</p>
+            <small class="row-start-2 md:row-start-1 text-center">Privacy Policy | Terms & Conditions</small>
+            <div class="text-brown text-2xl flex gap-[40px] justify-center md:justify-end">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
